@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#243642"><title>معك | GROUP 11 · BOOTH 5</title><link rel="icon" href="assets/logo.png"><link rel="stylesheet" href="style.css?v=5">
+<meta name="description" content="دعوة من معك — رحلة صغيرة تنتهي بأحد يسمعك. GROUP 11 · BOOTH 5">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_SA">
+<meta property="og:site_name" content="معك">
+<meta property="og:title" content="معك | GROUP 11 · BOOTH 5">
+<meta property="og:description" content="خطوة صغيرة، وأحد يسمعك. ننتظرك في بوث معك.">
+<meta property="og:url" content="https://maak-invitation.vercel.app/">
+<meta property="og:image" content="https://maak-invitation.vercel.app/assets/logo.png?v=6">
+<meta property="og:image:secure_url" content="https://maak-invitation.vercel.app/assets/logo.png?v=6">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="684">
+<meta property="og:image:alt" content="شعار معك الأصلي">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="معك | GROUP 11 · BOOTH 5">
+<meta name="twitter:description" content="خطوة صغيرة، وأحد يسمعك.">
+<meta name="twitter:image" content="https://maak-invitation.vercel.app/assets/logo.png?v=6">
+</head>
+<body>
+<main id="game" aria-label="رحلة معك التفاعلية">
+ <canvas id="scene" width="1280" height="720" aria-label="خريطة الكلية وشخصية اللاعبة"></canvas>
+ <header><div class="brand"><img src="assets/logo.png" alt="معك"><span id="stageLabel">اختاري وجهتك</span></div><div class="tools"><button id="sound" aria-label="تشغيل الصوت" title="الصوت">الصوت: مغلق</button><button id="restart" title="البدء من جديد">إعادة</button></div></header>
+ <div id="loader" class="overlay"><div class="card"><img src="assets/logo.png" alt="معك"><p id="loadingText">نجهّز لك الرحلة...</p></div></div>
+ <section id="mapUI"><div class="intro"><span class="eyebrow" dir="ltr">A LITTLE JOURNEY WITH MA’AK</span><h1>خطوة صغيرة،<br><span>وأحد يسمعك.</span></h1></div><button id="college" aria-label="اختيار كلية الحاسب الزهرية"><svg class="pin" viewBox="0 0 48 64" aria-hidden="true"><path d="M14 0H34V36H48L24 64L0 36H14Z"/></svg></button><p class="mapHint">اضغطي على الكلية لبدء رحلتك</p></section>
+ <section id="question" class="overlay hidden" aria-labelledby="questionTitle"><div class="card question"><span class="eyebrow">قبل ما تبدئين</span><h2 id="questionTitle">ما أغيّر اللي مرّيتي فيه،<br>لكن أسمعك لأني مرّيت بشي يشبهه.<br><span>من أنا؟</span></h2><div class="answers"><button data-answer="volunteer">متطوّع</button><button data-answer="doctor">طبيب</button><button data-answer="robot">روبوت</button></div><p id="feedback" role="status">اختاري الإجابة المناسبة</p></div></section>
+ <div id="toast" class="hidden" role="status"></div>
+ <div id="dialogue" class="hidden" role="status"><span id="speaker"></span><p id="dialogueText"></p></div>
+ <footer id="controls" class="hidden"><div class="keyboardHint">الأسهم أو WASD للمشي · اضغطي على الأرض للتحرك</div><div class="dpad" aria-label="أزرار تحريك الشخصية"><button data-key="ArrowUp" aria-label="للأعلى">▲</button><button data-key="ArrowLeft" aria-label="لليسار">◀</button><button data-key="ArrowDown" aria-label="للأسفل">▼</button><button data-key="ArrowRight" aria-label="لليمين">▶</button></div><button id="action" class="pixel-button">اقتربي من الباب</button></footer>
+ <section id="ending" class="overlay hidden"><div class="end-card"><img src="assets/logo.png" alt="معك"><h2>بعض المراحل تصير أخف<br>مع أحد يفهمك.</h2><p>معك، مو لحالك</p><p id="personalInvite" class="hidden"></p><div class="event" dir="ltr"><span>GROUP 11</span><span>BOOTH 5</span></div><button id="again" class="pixel-button">نبدأ من جديد؟</button></div></section>
+ <div id="fade" aria-hidden="true"></div>
+</main><script src="game.js?v=5"></script></body></html>
